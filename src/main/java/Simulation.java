@@ -41,7 +41,7 @@ public class Simulation {
 
     public void printResults() {
         System.out.println("***");
-        System.out.println("Simulation of " + dice.getNumberOfDice() + " dice rolled " + numberOfTosses + " times.");
+        System.out.println("Simulation of " + dice.getNumberOfDice() + " dice tossed " + numberOfTosses + " times.");
         System.out.println("***\n");
 
         for (int i = minBin; i <= maxBin; i++) {
@@ -50,11 +50,11 @@ public class Simulation {
             Double percentageRolled = (double) numOfTimesRolled / (double) numberOfTosses;
 
             if (i < 10) {
-                System.out.print(" " + i + "'s rolled : ");
+                System.out.print(" " + i + "'s tossed : ");
             } else if (i < 100) {
-                System.out.print(+ i + "'s rolled : ");
+                System.out.print(+ i + "'s tossed : ");
             } else {
-                System.out.print("Total " + i + "'s rolled : ");
+                System.out.print("Total " + i + "'s tossed : ");
             }
             System.out.printf("%7d: ", numOfTimesRolled);
             System.out.printf("%.2f ", percentageRolled);
