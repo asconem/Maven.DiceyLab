@@ -40,4 +40,6 @@ public class DiceTest {
         //Then
         Assert.assertTrue(actual >= numberOfDice && actual <= upperRange);
     }
+
+
 }
