@@ -45,7 +45,7 @@ public class SimulationTest {
 
     @Test
     public void TestPrintResults() {
-        Simulation sim = new Simulation(2, 5000);
+        Simulation sim = new Simulation(2, 1000000);
         sim.runSimulation();
         sim.printResults();
     }

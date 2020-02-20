@@ -56,7 +56,7 @@ public class Simulation {
             } else {
                 System.out.print("Total " + i + "'s rolled : ");
             }
-            System.out.printf("%4d: ", numOfTimesRolled);
+            System.out.printf("%7d: ", numOfTimesRolled);
             System.out.printf("%.2f ", percentageRolled);
 
             for (int stars = 1; stars < (percentageRolled * 100); stars++) {
