@@ -13,10 +13,12 @@ public class Dice {
     }
 
     public void setNumberOfDice(Integer numberOfDice) {
+
         this.numberOfDice = numberOfDice;
     }
 
     public Integer getNumberOfDice() {
+
         return numberOfDice;
     }
 
@@ -25,7 +27,7 @@ public class Dice {
         return roll.nextInt(6) + 1;
     }
 
-    public Integer tossAndSum(int numberOfDice) {
+    public Integer tossAndSum() {
         Integer sum = 0;
 
         for (int i = 1; i <= numberOfDice; i++) {
