@@ -1,27 +1,30 @@
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Map;
 
 public class Bins {
-    HashMap<Integer, Integer> bin;
+    private Map<Integer, Integer> binMap = new HashMap<Integer, Integer>();
 
     public Bins() {
-        this.bin = new HashMap<>();
+
     }
 
-    public HashMap<Integer, Integer> getBin() {
-        return bin;
+    public Bins(Integer minBin, Integer maxBin) {
+        for (Integer i = minBin; i <= maxBin; i++) {
+            this.binMap.put(i, 0);
+        }
     }
 
-    public void setBin(Integer key, Integer value) {
-        bin.put(key, value);
+    public Map<Integer, Integer> getBinMap() {
+        return this.binMap;
     }
 
-    public Integer getBin(Integer binNumber) {
-        return bin.get(binNumber);
+    public Integer getBinsValue(Integer binNumber) {
+        return binMap.get(binNumber);
     }
 
     public void incrementBin(Integer binNumber) {
-        Integer addBin = getBin(binNumber) + 1;
-        bin.put(binNumber, addBin);
+        Integer increment = getBinsValue(binNumber) + 1;
+        binMap.replace(binNumber, increment);
     }
 }
