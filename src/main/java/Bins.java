@@ -20,7 +20,7 @@ public class Bins {
         return bin.get(binNumber);
     }
 
-    public void binCounter(Integer binNumber) {
+    public void incrementBin(Integer binNumber) {
         Integer addBin = getBin(binNumber) + 1;
         bin.put(binNumber, addBin);
     }

@@ -36,6 +36,9 @@ public class Simulation {
     }
 
     public void runSimulation() {
+        for (int i = 0; i < numberOfTosses; i++) {
+            bins.incrementBin(dice.tossAndSum());
+        }
 
     }
 
